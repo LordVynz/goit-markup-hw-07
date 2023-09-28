@@ -343,6 +343,14 @@
       <path d="m4.817 15.389-.169-.162-2.544 2.41 8.962 8.55L29.895 8.225l-2.527-2.411L11.066 21.35l-6.249-5.962z"/>
 </symbol>
 
+        <symbol id="icon-hamburger" viewBox="0 0 47 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"></path>
+</symbol>
+
+<symbol id="menu" viewBox="0 0 24 24">
+<path d="M3 6h18v2.016h-18v-2.016zM3 12.984v-1.969h18v1.969h-18zM3 18v-2.016h18v2.016h-18z"></path>
+</symbol>
+
 </svg>
 
 

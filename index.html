@@ -5,6 +5,7 @@
     <title>Web Studio</title>
     <meta charset="utf-8" />
     <meta name="description" content="Studio Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link
@@ -30,12 +31,17 @@
                     <li class="item"><a class="contact link" href="/">+11(000)111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24">
+                    <use href="./images/svg/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <!--Main Section-->
     <main>
         <section class="hero bg-hero">
-            <div class="container">
+            <div>
                 <h1 class="hero-heading">Effective Solutions <br /> For Your Business</h1>
                 <button class="button order" type="button" data-modal-open>Order Service</button>
             </div>
@@ -433,6 +439,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
