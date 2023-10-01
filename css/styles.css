@@ -198,11 +198,14 @@ address {
   .contacts-menu {
     display: flex;
     gap: 40px;
-    margin-left: 170px;
-
   }
 }
 
+@media screen and (min-width: 1158px){
+    .contacts-menu {
+      margin-left: 170px;
+  }
+}      
 
 .list {
   display: none;
