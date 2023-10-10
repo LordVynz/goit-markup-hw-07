@@ -24,6 +24,7 @@ body {
   color: var(--primary-text);
   font-size: 16px;
   letter-spacing: 0.03em;
+  font-weight: 500;
 }
 
 /* css resets */
@@ -251,23 +252,31 @@ address {
 }
 
 /* underlined effects */
-.nav-menu .current-link {
-  position: relative;
+
+.page-header-link {
   text-decoration: none;
-  color: var(--cta);
+  position: relative;
+  transition: color var(--transition-time) var(--timing-function);
 }
 
-.current-link::after {
+.page-header-link:hover::after{
+  width: 100%;
+}
+
+.page-header-link::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -30px;
   border-radius: 2px;
-  width: 100%;
+  width: 0;
   height: 4px;
   background-color: var(--cta);
-  transition: all var(--timing-function) var(--transition-time);
+  transition: width var(--timing-function) var(--transition-time);
+}
 
+.current-link::after{
+  width: 100%;
 }
 
 
