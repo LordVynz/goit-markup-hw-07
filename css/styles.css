@@ -243,12 +243,13 @@ address {
 
 
 
-.nav-menu .page:hover,
-.nav-menu .page:focus,
+.nav-menu .page-header-link:hover,
+.nav-menu .page-header-link:focus, 
 .contacts-menu .contact:hover,
-.contacts-menu .contact:focus {
+.contacts-menu .contact:focus, 
+.page-header-link.current-link {
   color: var(--cta);
-  transition: all var(--timing-function) var(--transition-time);
+  transition: color var(--timing-function) var(--transition-time);
 }
 
 /* underlined effects */
