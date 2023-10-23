@@ -281,8 +281,6 @@ address {
 }
 
 
-
-
 /* hero */
 .hero {
   padding-top: 200px;
@@ -298,8 +296,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 1440px;
 }
 
 
@@ -931,8 +928,7 @@ button {
 }
 
 
-.modal {
-  background-color: rgba(0, 0, 0, 0.5);
+.backdrop {
   position: fixed;
   display: flex;
   align-items: center;
@@ -943,23 +939,24 @@ button {
   left: 0;
   pointer-events: auto;
   opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
   transition-property: visibility, opacity;
   transition-duration: 250ms;
   transform: none;
 }
 
-.modal.is-hidden {
+.backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   transform: translateY(-20px);
 }
 
-.modal.is-hidden .modal-content {
+.backdrop.is-hidden .modal {
   transform: scale(0.5);
 }
 
-.modal-content {
+.modal {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1203,10 +1200,11 @@ button {
   transform: translateX(100%);
 }
 
+
 .mobile-nav.is-open {
   visibility: visible;
   pointer-events: auto;
-  transform: none;
+  transform: translateX(0);
 }
 
 .modal-nav-close {
